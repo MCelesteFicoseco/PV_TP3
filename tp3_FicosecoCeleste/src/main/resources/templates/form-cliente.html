@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>TP3 PV 2024</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+	
+<body>
+	<header id="header">
+		<div class="encabezado">
+			<h1>Programacion Visual 2024</h1>
+			<div class="navegacion">
+				<nav class="menu">
+					<ul>
+						<a href="index.html" class="opciones">Inicio</a>
+						<a href="#caracteristicas" class="opciones">Caracteristicas de Java</a>
+						<a href="#operadores" class="opciones">Operadores Aritméticos</a>
+						<a href="#interfaces" class="opciones">Interfaces Java</a>
+						<a href="form-cliente.html" class="opciones">Cliente</a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<main class="principal">
+		<h2 class="titulo">Formulario de alta de Cliente</h2>
+		
+		<div class="formulario">
+			
+			<form action="index.html">
+				  <div class="formulario-item">
+					<label for="dni" >DNI:</label>
+					<input type="number" id="dni" name="dni" value="" required><br>
+				  </div>
+				
+				  <div class="formulario-linea">
+					  <label for="nombre">Nombre:</label>
+					  <input type="text" id="nombre" name="nombre" value="" required>
+					  
+					  <label for="lname">Apellido:</label>
+					  <input type="text" id="lname" name="lname" value="" required><br>
+				  </div>
+				 
+				  <div class="formulario-item">
+					<label for="fecha_nac" >Fecha de Nacimiento:</label>
+					<input type="date" id="fecha_nac" name="fecha_nac" value="" required><br>
+				  </div>
+				  
+				  <div class="formulario-lista">
+					  <label for="fecha_nac" >Seleccionar género:</label><br>
+					  <input type="radio" id="femenino" name="genero" value="femenino">
+					  <label for="femenino">Femenino</label><br>
+					  <input type="radio" id="masculino" name="genero" value="masculino">
+					  <label for="masculino">Masculino</label><br>
+					  <input type="radio" id="generox" name="genero" value="generox">
+					  <label for="generox">X</label><br>
+				  </div>
+				  
+				  <div class="formulario-item">
+					<label for="email" >Correo electrónico:</label>
+					<input type="email" id="email" name="email" value="" required><br>
+				  </div>
+				  
+				  <div class="formulario-linea">
+					  <label for="domicilio">Domicilio:</label>
+					  <input type="text" id="domicilio" name="domicilio" value="" required>
+					  
+					  <label for="provincia">Provincia:</label>
+					  <select id="provincia" name="provincia" required>
+					    <option value="jujuy">Jujuy</option>
+					    <option value="salta">Salta</option>
+					    <option value="tucuman">Tucumán</option>
+					    <option value="formosa">Formosa</option>
+						<option value="chaco">Chaco</option>
+					  </select><br>
+				  </div>
+				  
+				  <div class="formulario-item">
+					<label for="celular" >Numero de celular:</label>
+					<input type="number" id="celular" name="celular " value="" required><br>
+				  </div>
+				  
+				  <div class="formulario-lista">
+					  <label for="categorias" >Seleccionar categorías de interés:</label><br>
+					  <input type="checkbox" id="api" name="api" value="true">
+					  <label for="categorias"> API </label><br>
+					  <input type="checkbox" id="framework" name="framework" value="true">
+					  <label for="categorias"> Frameworks </label><br>
+					  <input type="checkbox" id="prog-funcional" name="prog-funcional" value="true">
+					  <label for="categorias"> Programación Funcional </label><br>
+					  <input type="checkbox" id="ide" name="ide" value="true">
+					  <label for="categorias"> IDE </label><br>
+				  </div>
+				  
+				  <div class="formulario-item">
+					  <label for="sugerencia">Sugerencias para la empresa:</label><br>
+					  <textarea id="sugerencia" name="sugerencia" rows="4" cols="50"></textarea><br>
+					  
+					  <label for="pass" >Password:</label>
+					  <input type="password" id="pass" name="pass" value="" required><br>
+					  
+					  <input type="checkbox" id="terminos" name="terminos" value="true" required>
+					  <label for="terminos"> Acepto términos y condiciones </label><br>
+					  
+				  </div>
+				  
+				  <div class="formulario-item">
+					<input type="submit" class="btn-formulario" value="Registrar">
+				  </div>
+				  
+			</form>
+			
+		</div>
+		
+		
+	</main>
+	
+	
+	<footer id="pie-pagina">
+		<h4 class="titulo-footer">Datos personales</h4><br>
+		<div class="datos-footer">
+			<p class="parrafo-footer">Escrito por <b>Ficoseco Maria Celeste</b></p>
+			<p class="parrafo-footer">celeste.ficoseco@gmail.com</p>
+		</div>
+	    
+		<h4 class="titulo-footer">Redes Sociales</h4>
+		<ul>
+			<li><a class="redes" href="https://www.instagram.com/celesteficoseco/">Instragram</a></li>
+			<li><a class="redes" href="https://www.facebook.com/celeste.ficoseco/">Facebook</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
