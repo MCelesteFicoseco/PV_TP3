@@ -1,0 +1,181 @@
+#header{
+	background-color: rgb(221, 221, 221);
+}
+
+header h1{
+	color:rgb(0, 0, 64);
+	text-align: center;
+	padding-top: 0%;
+	margin-top: 0%;
+}
+
+.menu{
+	background-color: darkgray;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.opciones{
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid rgb(192, 192, 192);
+}
+
+.opciones:hover{
+	color: rgb(0, 0, 64);
+}
+
+.seccion{
+	margin-left: 10px;
+}
+
+.titulo{
+	color: whitesmoke;
+	text-align: center;
+	background-color: steelblue;
+}
+
+.parrafo{
+	margin-left: 5px;
+}
+
+.parrafo-aside{
+	text-align: center;
+}
+
+.informacion{
+  width: 36%;
+  padding-left: 10px;
+  margin-left: 10px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+	width: 65%;
+	height: 65%;
+	padding-left: 16%;
+}
+
+.lista{
+	font-style: oblique;
+}
+
+.tabla{
+	border:2px solid gray;
+	border-collapse: collapse;
+	text-align: center;
+	width: 300px;
+}
+
+#pie-pagina{
+	background-color: rgb(192, 192, 192);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#pie-pagina p, h4,h5, .datos-footer{
+	color:lightslategray;
+	margin-left: 15px;
+	text-align: center;
+}
+
+.redes{
+	color: lightslategrey;
+	font-size: 12px;
+}
+
+.redes:hover{
+	color: white;
+}
+
+.parrafo-footer{
+	font-size: 12px;
+}
+
+.titulo-footer{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 2px solid slategray;
+}
+
+.formulario{
+	width: 800px;
+	background-color: lightslategray;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 1px;
+}
+
+
+
+.formulario label{
+	color: rgb(255, 255, 255);
+	padding-left: 15px;
+	padding-right: 5px;	
+}
+
+.formulario-linea{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.formulario-item{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.formulario-lista{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.formulario-lista label{
+	display: inline-block;
+}
+
+.formulario-item, .formulario-lista, .formulario-linea{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.btn-formulario{
+	background-color: steelblue;
+	color: white;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+

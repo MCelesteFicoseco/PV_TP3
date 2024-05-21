@@ -4,95 +4,35 @@
 	<meta charset="UTF-8">
 	<title>TP3 PV 2024</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		.navegacion{
-			background-color: darkgray;
-			height: 70px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		nav li{
-			float: left;
-			width: 180px;
-			padding-left: 5px;
-		}
-		.encabezado{
-			background-color: rgb(221, 221, 221);
-		}
-		header h1{
-			color:rgb(0, 0, 64);
-			text-align: center;
-			padding-top: 0%;
-			margin-top: 0%;
-		}
-		aside {
-		  width: 40%;
-		  padding-left: 20px;
-		  margin-left: 15px;
-		  float: right;
-		  font-style: italic;
-		  background-color: lightgray;
-		  justify-content: center;
-		  align-items: center;
-		}
-		.img{
-			width: 50%;
-			height: 50%;
-			text-align: center;
-		}
-		table{
-			border:2px solid gray;
-			border-collapse: collapse;
-			text-align: center;
-			width: 300px;
-		}
-		td{
-			border: 1px solid gray;
-		}
-		footer{
-			background-color: gray;
-		}
-		footer p, h4{
-			color: rgb(221, 221, 221);
-			margin-left: 10px;
-		}
-		.lista{
-			font-style: oblique;
-		}
-		p{
-			width: 90%;
-			display: block;
-			
-
-		}
-	</style>
+	<link rel="stylesheet" href="../static/css/estilos.css">
 </head>
 	
 <body>
-	<header>
+	<header id="header">
 		<div class="encabezado">
 			<h1>Programacion Visual 2024</h1>
 			<div class="navegacion">
-				<nav>
+				<nav class="menu">
 					<ul>
-						<li><a href="#caracteristicas">Caracteristicas de Java</a></li>
-						<li><a href="#operadores">Operadores Aritméticos</a></li>
-						<li><a href="#interfaces">Interfaces Java</a></li>
+						<a href="index.html" class="opciones">Inicio</a>
+						<a href="#caracteristicas" class="opciones">Caracteristicas de Java</a>
+						<a href="#operadores" class="opciones">Operadores Aritméticos</a>
+						<a href="#interfaces" class="opciones">Interfaces Java</a>
+						<a href="form-cliente.html" class="opciones">Cliente</a>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</header>
 	
-	<main>
-		<section id="caracteristicas">
-			<aside>
-				<p>Puedes conocer más de Java <a href="https://www.cursosaula21.com/que-es-java/">aquí</a></p>
+	<main class="principal">
+		<section id="caracteristicas" class="seccion">
+			<aside class="informacion">
+				<p class="parrafo-aside">Puedes conocer más de Java <a href="https://www.cursosaula21.com/que-es-java/">aquí</a></p>
 				<img class="img" src="../static/images/java.jpg" alt="funcionamiento java"/>
 			</aside>
-			<h2>Características de Java</h2>
-			<p>Java es una tecnología que incluye un lenguaje de programación y una plataforma de desarrollo</p>
+			<h2 class="titulo">Características de Java</h2>
+			<p class="parrafo">Java es una tecnología que incluye un lenguaje de programación y una plataforma de desarrollo</p>
 			<ul class="lista">
 				<li>Sencillo</li>
 				<li>Orientado a objetos</li>
@@ -109,16 +49,17 @@
 			
 		</section>
 		
-		<section id="operadores"><hr>
-			<h2>Operadores</h2>
-			<h3>Operadores lógicos y relacionales</h3>
-			<p> En Java se disponen de los operadores relacionales habitualmente presentes en loslenguajes de
+		<section id="operadores" class="seccion"><hr>
+			<h2 class="titulo">Operadores</h2>
+			<h3 class="subtitulo">Operadores lógicos y relacionales</h3>
+			<aside class="informacion">
+				<p class="parrafo-aside">Hay que prestar atención a no confundir == con = porque implican distintas cosas.</p>
+			</aside>
+			<p class="parrafo"> En Java se disponen de los operadores relacionales habitualmente presentes en loslenguajes de
 			programación, tales como “es igual”, “es distinto”, menor, menor o igual, mayor, mayor o igual.
 			También posee los operadores lógicos and (y), or (o) y not (no). </p>
-			<aside>
-				<p>Hay que prestar atención a no confundir == con = porque implican distintas cosas.</p>
-			</aside>
-			<table >
+			
+			<table class="tabla">
 				<thead>
 					<tr>
 						<th scope="col">Operador</th>
@@ -155,31 +96,34 @@
 			
 		</section>
 		<hr>
-		<section id="interfaces">
+		<section id="interfaces" class="seccion">
 			
-			<h2>Interfaces</h2>
-			<aside>
-				<p>Una clase puede heredar sólo de otra única clase,
+			<h2 class="titulo">Interfaces</h2>
+			<aside class="informacion">
+				<p class="parrafo-aside">Una clase puede heredar sólo de otra única clase,
 				pero puede implementar cuantos interfaces necesite</p>
 			</aside>
-			<p>Una interfaz es una colección de métodos abstractos y propiedades constantes. En las interfaces
+			<p class="parrafo">Una interfaz es una colección de métodos abstractos y propiedades constantes. En las interfaces
 			se especifica qué se debe hacer pero no su implementación. Serán las clases que implementen
 			estas interfaces las que describen la lógica del comportamiento de los métodos.</p>
-			<p>Si queremos definir un interfaz, se utiliza la palabra reservada interface, en lugar de class, y dentro declaramos (no
+			<p class="parrafo">Si queremos definir un interfaz, se utiliza la palabra reservada <i>interface</i>, en lugar de class, y dentro declaramos (no
 			implementamos), los métodos que queremos que tenga la interfaz. Para que una clase implemente los métodos de esta interfaz, se utiliza la palabra 
 			reservada implements tras el nombre de la clase</p>
 		</section>
 	</main>
 	
 	
-	<footer>
-		<h4>Datos personales</h4>
-	    <p>Escrito por <b>Ficoseco Maria Celeste</b></p>
-		<p>celeste.ficoseco@gmail.com</p>
-		<p>Redes Sociales</p>
+	<footer id="pie-pagina">
+		<h4 class="titulo-footer">Datos personales</h4><br>
+		<div class="datos-footer">
+			<p class="parrafo-footer">Escrito por <b>Ficoseco Maria Celeste</b></p>
+			<p class="parrafo-footer">celeste.ficoseco@gmail.com</p>
+		</div>
+	    
+		<h4 class="titulo-footer">Redes Sociales</h4>
 		<ul>
-			<li><a href="https://www.instagram.com/celesteficoseco/">Instragram</a></li>
-			<li><a href="https://www.facebook.com/celeste.ficoseco/">Facebook</a></li>
+			<li><a class="redes" href="https://www.instagram.com/celesteficoseco/">Instragram</a></li>
+			<li><a class="redes" href="https://www.facebook.com/celeste.ficoseco/">Facebook</a></li>
 		</ul>
 	</footer>
 </body>
